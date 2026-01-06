@@ -1,0 +1,120 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.music-player {
+  width: 350px;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.album-art img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.song-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.artist-name {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #555;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background-color: #f44336;
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+.controls button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: backgrond 0.3s ease, transform 0.2s ease;
+}
+.controls button:hover {
+  background-color: #444;
+}
+.controls button:active {
+  transform: scale(0.9);
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(-3px, -3px);
+    opacity: 0.8;
+  }
+  20% {
+    transform: translate(3px, 3px);
+    opacity: 0.6;
+  }
+  30% {
+    transform: translate(-5px, -5px);
+    opacity: 0.4;
+  }
+  40% {
+    transform: translate(5px, 5px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-2px, 2px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(2px, -2px);
+    opacity: 0.9;
+  }
+  70% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.album-art {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  background-image: url("thalapahy.avif");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 20px auto;
+  display: block;          
+}
+
